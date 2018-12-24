@@ -57,9 +57,7 @@ public class ClientSocketServer extends Thread
 
                 String receivedMessage = "";
                 for (byte nextByte : message)
-                {
                     receivedMessage = receivedMessage + (char) nextByte;
-                }
                 
                 server.sendMessageToAll(receivedMessage);
             }
