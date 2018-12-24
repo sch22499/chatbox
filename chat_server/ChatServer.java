@@ -20,5 +20,6 @@ public class ChatServer
     {
         int port = 6000;
         Server chatServer = new Server(port);
+		chatServer.start();
     }
 }
